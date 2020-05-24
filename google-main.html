@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<style>
+body {
+    font-family:arial,sans-serif;
+    margin:0px 30px ;
+    display:flex;
+    flex-direction: column;
+}
+
+a {
+    display:inline-block;
+    font-size:13px;
+    vertical-align:middle;
+    padding:10px;
+    cursor:pointer;
+}
+
+#bar {
+    display:flex;
+    justify-content: flex-end;
+    position:absolute;
+    right:30px;
+    top:16px;
+    width:100%;
+}
+
+#viewport {
+    margin-top:120px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#srch {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height:44px;
+    width: 482px;
+    border-radius: 24px;
+    margin: 0 auto;
+    border: 2px solid rgb(241, 235, 235); 
+}
+
+#text {
+    width:420px;
+    justify-content: center;
+    border:none;
+    height:20px;
+    outline:none;
+    font-size: 1rem;
+}
+
+#sign {
+    color:white;
+    background-color: #4285f4;
+    border-radius: 2px;
+    font-weight: bold;
+    outline:none;
+    cursor:pointer;
+    line-height:28px;
+    padding: 0px 12px;
+
+}
+
+.more {
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0px 16px;
+    line-height: 27px;
+    height:36px;
+    border-radius: 4px;
+    color:#5F6368;
+    cursor:pointer;
+    min-width: 54px;
+    
+}
+
+</style>
+<head>
+
+</head>
+<body>
+    <div id='bar'>
+        <a>Gmail</a>
+        <a>Images</a>
+        <input type='button' id='sign'value='Sign in'>
+
+    </div>
+<div id='viewport'>
+    <img src ='https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'>
+    <div id='srch'>
+        <input type='text' id='text' >
+    </div>
+    <div id='more'>
+        <input type='button' class='more' value='Google Search'>
+        <input class='more' type='button' value=" Im feeling lucky">
+    </div>
+    
+</div>
+
+</body>
+</html>
